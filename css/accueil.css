@@ -1,0 +1,492 @@
+/* grands titres      */
+
+#presentation a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+#presentation a:hover {
+    text-decoration: none;
+    color: #da3d88;
+}
+
+#presentation a .presentation p {
+    font-size: 500%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/* *****animation titre ***** */
+
+
+/* titre proximite */
+
+.proxi {
+    position: absolute;
+    top: 103px;
+    animation: 2s 1 alternate proxiAnim;
+}
+
+@keyframes proxiAnim {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/* titre exigence */
+
+.exi {
+    position: absolute;
+    top: 203px;
+    animation: 3s 1 alternate exiAnim;
+}
+
+@keyframes exiAnim {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/* titre creativite */
+
+.crea {
+    position: absolute;
+    top: 303px;
+    animation: 4s 1 alternate creaAnim;
+}
+
+@keyframes creaAnim {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/* titre souplesse et reactivité */
+
+.soupl {
+    position: absolute;
+    top: 403px;
+    animation: 5s 1 alternate souplAnim;
+}
+
+@keyframes souplAnim {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#intro {
+    background-image: url(img/coule_1600.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+}
+
+
+/* animation à gauche des grands titres   */
+
+.codons {
+    /* opacity: 0; */
+    text-shadow: 1px 1px 2px black;
+    color: #d4d651;
+    width: 10rem;
+    font-size: 3rem;
+    font-weight: 300;
+    position: absolute;
+    top: 150px;
+    padding: 1%;
+    animation: 6s 2 alternate-reverse codeAnim;
+}
+
+@keyframes codeAnim {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+.cont {
+    position: relative;
+    width: 500px;
+    height: 350px;
+}
+
+.ca {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 20px 80px 20px 20px;
+    background-color: #b7b936;
+    border-radius: 10px;
+    transition: clip-path 0.5s ease-in-out;
+    margin-top: 100px;
+}
+
+.ca::before {
+    font-family: 'fontawesome';
+    content: '\f129';
+    position: absolute;
+    right: 37px;
+    top: 51px;
+    font-size: 1.7em;
+    color: white;
+}
+
+.ca:nth-child(1):before {
+    content: '\f0a6';
+    right: 16px;
+    top: 48px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ca:nth-child(2):before {
+    content: '\f005';
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 2px black;
+}
+
+.ca:nth-child(3):before {
+    content: '\f53f';
+    right: 16px;
+    top: 54%;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ca:nth-child(4):before {
+    content: '\f069';
+    right: 15px;
+    top: 74%;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ca:hover::before {
+    opacity: 0;
+    z-index: 99;
+}
+
+.ca:nth-child(odd):hover {
+    background-color: #da3d88;
+}
+
+.ca:nth-child(even):hover {
+    background-color: #2b599a;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.ca:nth-child(1) {
+    clip-path: circle(7% at 93% 20%);
+}
+
+.ca:nth-child(2) {
+    clip-path: circle(7% at 93% 40%);
+}
+
+.ca:nth-child(3) {
+    clip-path: circle(7% at 93% 60%);
+}
+
+.ca:nth-child(4) {
+    clip-path: circle(7% at 93% 80%);
+}
+
+.ca:hover {
+    clip-path: circle(70%);
+}
+
+@media (max-width:576px) {
+    /* ****accueil**********/
+    .all-content {
+        display: flex;
+        flex-direction: column;
+    }
+    #presentation_576 {
+        width: 50%;
+        font-size: 0.5em;
+        position: absolute;
+        top: 515px;
+    }
+    #presentation a .presentation p {
+        font-size: 250%;
+        font-style: italic;
+        font-weight: 400;
+        /* text-align: center; */
+    }
+    #presentation {
+        margin-top: 200px;
+        margin-bottom: 432px;
+    }
+    #titre {
+        position: absolute;
+        top: 89px;
+    }
+    .proxi {
+        position: absolute;
+        top: 37px;
+        animation: 2s 1 alternate proxiAnim;
+    }
+    .exi {
+        position: absolute;
+        top: -21px;
+        animation: 3s 1 alternate exiAnim;
+    }
+    .crea {
+        position: absolute;
+        top: -73px;
+        animation: 4s 1 alternate creaAnim;
+    }
+    .soupl {
+        position: absolute;
+        top: -120px;
+        animation: 5s 1 alternate souplAnim;
+    }
+    .codons {
+        /* opacity: 0; */
+        text-shadow: 1px 1px 2px black;
+        color: #d4d651;
+        width: 10rem;
+        font-size: 1.5em;
+        font-weight: 300;
+        position: absolute;
+        top: 150px;
+        padding: 1%;
+        animation: 1s 2 ease-in alternate-reverse codeAnim;
+        text-align: left;
+        left: 50px;
+    }
+    .cont {
+        position: relative;
+        width: 400px;
+        top: 331px;
+        height: 350px;
+        right: 100px;
+        top: 880px;
+        left: -4px;
+    }
+    .ca {
+        bottom: 368px;
+    }
+}
+
+@media(max-width:768px) {
+    #presentation a .presentation p {
+        font-size: 300%;
+        font-style: italic;
+        font-weight: 500;
+        /* text-align: center; */
+    }
+    .reslink {
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:992px) {
+    #presentation a .presentation p {
+        font-size: 400%;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .codons {
+        /* opacity: 0; */
+        text-shadow: 1px 1px 2px black;
+        color: #d4d651;
+        width: 10rem;
+        font-size: 2rem;
+        font-weight: 300;
+        position: absolute;
+        top: 346px;
+        padding: 1%;
+        animation: 6s 2 alternate-reverse codeAnim;
+        margin-left: 95px;
+    }
+    .cont {
+        position: relative;
+        width: 400px;
+        height: 350px;
+        top: 142px;
+        right: 50px;
+    }
+    .reslink {
+        white-space: nowrap;
+    }
+}
+
+@media(min-width:1201px) and (max-width:1400px) {
+    #presentation a .presentation p {
+        font-size: 480%;
+        font-style: italic;
+        font-weight: 600;
+        /* text-align: center; */
+    }
+    .codons {
+        /* opacity: 0; */
+        text-shadow: 1px 1px 2px black;
+        color: #d4d651;
+        width: 10rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        position: absolute;
+        top: 346px;
+        padding: 1%;
+        animation: 6s 2 alternate-reverse codeAnim;
+        margin-left: 30px;
+    }
+    .cont {
+        position: relative;
+        width: 400px;
+        height: 350px;
+        top: 142px;
+        right: 50px;
+    }
+}
+
+@media(min-width:1401px) {
+    #presentation {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        /* width: 50vw; */
+        max-width: 1000px;
+        margin-top: -50px;
+    }
+    .cont {
+        position: relative;
+        width: 400px;
+        height: 350px;
+        top: 142px;
+        right: 35px;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.middle_arrow {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 2em;
+}
+
+.bottom_arrow {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 2em;
+    z-index: -1;
+}
+
+.top_arrow {
+    opacity: 0;
+    position: absolute;
+    top: 130%;
+    right: 2em;
+}
+
+.proxi {
+    position: absolute;
+    top: 103px;
+    animation: 2s 1 alternate proxiAnim;
+}
+
+.exi {
+    position: absolute;
+    top: 203px;
+    animation: 3s 1 alternate exiAnim;
+}
+
+.crea {
+    position: absolute;
+    top: 303px;
+    animation: 4s 1 alternate creaAnim;
+}
+
+.soupl {
+    position: absolute;
+    top: 403px;
+    animation: 5s 1 alternate souplAnim;
+}
+
+@media(max-width:576px) {
+    #presentation_576 {
+        width: 50%;
+        font-size: 0.5em;
+        position: absolute;
+        top: 515px;
+    }
+    #titre {
+        position: absolute;
+        top: 89px;
+    }
+    .proxi {
+        position: absolute;
+        top: 37px;
+        animation: 2s 1 alternate proxiAnim;
+    }
+    .exi {
+        position: absolute;
+        top: -21px;
+        animation: 3s 1 alternate exiAnim;
+    }
+    .crea {
+        position: absolute;
+        top: -73px;
+        animation: 4s 1 alternate creaAnim;
+    }
+    .soupl {
+        position: absolute;
+        top: -120px;
+        animation: 5s 1 alternate souplAnim;
+    }
+    .cont {
+        position: relative;
+        width: 400px;
+        top: 331px;
+        height: 350px;
+        right: 100px;
+        top: 880px;
+        left: -4px;
+    }
+}

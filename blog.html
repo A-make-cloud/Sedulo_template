@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/logo_sedulo.png" />
+    <!-- feuilles de style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- feuilles de style font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <!-- feuilles de style lightbox -->
+    <link href="assets/lightbox/lightbox.min.css" rel="stylesheet">
+    <!-- <script src="assets/lightbox/lightbox.js"></script> -->
+    <!-- police d'écriture -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Site Agence Web Sedulo</title>
+
+
+
+
+</head>
+
+
+<body>
+
+    <!-- ancre retour milieu de page -->
+    <div id="middle_ancre" class=""></div>
+    <header>
+        <nav id="navBg" class="navbar navbar-expand-lg navbar-light px-5 py-3">
+            <div class="container-fluid">
+
+
+                <!-- logo format desktop -->
+                <div>
+                    <a href="index.php"><img src="./img/logo_sedulo.png" class="justify-content-start w-50 d-none d-sm-block" alt="logo"></a>
+                </div>
+
+                <a class="navbar-brand d-none" href="#">Navbar</a>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <!-- logo format mobil -->
+
+                        <a href="index.php" class="navbar-brand"><img src="./img/logo_sedulo.png" class="rounded mx-auto d-block w-25 d-block d-sm-none justify-content-center" alt="logo"></a>
+
+                    </div>
+                    <div class="justify-content-end d-block d-sm-none"> <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+
+                    <ul class="liste navbar-nav fs-5 text">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="accueil" aria-current="page" href="accueil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisations.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_contact.php" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- ancre retour haut de page -->
+        <div id="top-ancre"></div>
+
+        <style>
+            /* ne s'applique pas si il est placé dans la feuille de style */
+            
+            @media(max-width:576px) {
+                .mainBlog {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 250px;
+                }
+                .blogArticleImg {
+                    margin-right: 50px;
+                }
+                .blogArticleText {
+                    margin-left: -100px;
+                }
+            }
+        </style>
+
+
+        <!-- fleche qui descends en milieu de page -->
+        <a href="#middle_ancre" class="text-decoration-none middle_arrow"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+        <!-- fleche qui descends en bas de page -->
+        <a href="#bottom-ancre" class="text-decoration-none bottom_arrow"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+
+
+
+
+
+        <!-- ========================================= -->
+        <!-- Articles du Blog -->
+        <!-- ========================================= -->
+        <div class="header_bottom container">
+            <div class="pt-5">
+                <h1 class="text-center">L'actu Web vue par Sedulo</h1>
+            </div>
+            <div class="">
+
+
+                <div class="contenuContact mt-5 mx-5 p-5">
+
+                    <h2>Les points forts qui ont marqués le Web</h2>
+                    <h4>Professionnels du digital synonyme d’être à la pointe dans de nombreux domaines </h4>
+
+                    <p>Retrouvez ici les informations, les études et les nouveautés du digital qui vous permettront d’être à jour</p>
+
+                    <h4>Des infos, des conseils</h4>
+                    <p>La veille pour rester en éveil; le monde du Web est en perpétuel évolution</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container w-75">
+        <div class="py-5">
+            <h2 class="text-center mb-5 text-uppercase">Blog</h2>
+        </div>
+
+        <div class="mainBlog container">
+            <section class="blogArticleImg">
+                <div class="article article_01">
+                    <div class="card mb-4">
+                        <div>
+                            <h3>Mise à Jour Algorithme Google : Core Web Vitals</h3>
+                            <p>L’ajout des « signaux web essentiels » modifiera donc l’algorithme de classement de Google en 2021.</p>
+                        </div>
+                        <div class="blogImg">
+                            <img src="img/coreWebVital_600.jpg" class="img-fluid" alt="image blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article article_02">
+                    <div class="card mb-4">
+                        <h3>Sur le seul plan du CO2, le numérique émet plus que l’aviation.</h3>
+                        <p> gestes éco-responsables réfléchir à notre consommation digitale; ce chiffre de consommation de 9%, il est possible de passer à 1,5%, juste en revoyant nos gestes et en apprivoisant de nouvelles habitudes.</p>
+                        <div class="blogImg">
+                            <img src="img/ecogestes_600.jpg" class="img-fluid" alt="image blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article article_03">
+                    <div class="card mb-4">
+                        <h3>location de matériel informatique pour le télétravail !</h3>
+                        <p>Simple, rapide et configurable, la location de PC vous permet de garder la flexibilité dans la gestion de parc informatique professionnel durant le télétravail.</p>
+                        <div class="blogImg">
+                            <img src="img/webCodeur_600.jpg" class="img-fluid" alt="image blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article article_04">
+                    <div class="card mb-4">
+                        <h3>référencement payant : SEA</h3>
+                        <p>Appelé le Search Engine Advertising (SEA), le référencement payant permet de propager des publicités ciblées sur Internet.</p>
+                        <div class="blogImg">
+                            <img src="img/seo-sea_600.jpg" class="img-fluid" alt="imgage blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article article_05">
+                    <div class="card mb-4">
+                        <h3>Employee advocacy</h3>
+                        <p>c’est tout simplement lorsqu’une entreprise ou une marque mobilise ses salariés pour qu’ils deviennent des ambassadeurs</p>
+                        <div class="blogImg">
+                            <img src="img/advocacy_600.jpg" class="img-fluid" alt="image blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article article_06">
+                    <div class="card mb-4">
+                        <h3>Incendie OVH</h3>
+                        <p>l’un des quatre Datacenter OVH à Strasbourg détruit intégralement dans la nuit du 10 mars 2021</p>
+                        <div class="blogImg">
+                            <img src="img/ovhcloud_600.jpg" class="img-fluid" alt="image blog">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <hr class="vertical">
+            </section>
+
+            <section class="blogArticleText">
+                <div class="blogText text1 article ">
+                    <div>
+                        <p>
+                            Courant 2020, Google a annoncé que son algorithme de classement prendrait en compte les Core Web Vitals. </p>
+                        <p>
+                    </div>
+
+
+                    <p>
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                            Lire plus
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapse1">
+                        <div class="card card-body">
+                            <div id="btnPlus1">
+
+                            </div>
+
+                            <div>
+                                <p>A partir de mi-juin 2021. 3 nouveaux indicateurs visant à améliorer l’expérience utilisateur (UX) ont vu le jour afin de mesurer le temps de chargement (LCP), la réactivité (FID ) et la stabilité visuelle de la page (CLS).
+                                </p>
+                                <p> L’impact sur le classement sera tout de même mineur puisque Google affirme que les contenus les plus pertinents seront toujours les premiers.</p>
+
+                            </div>
+                            <p> La qualité du contenu a pour l’instant la priorité sur l’expérience utilisateur. Globalement, Google souhaite que les pages présentes sur son moteur de recherche se chargent rapidement notamment sur mobile et que le contenu
+                                soit de qualité.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="blogText text2 article">
+                    <div>
+                        <p>Des gestes simples permettent de diminuer les émissions de gaz à effet de serre</p>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                            Lire plus
+                        </button>
+
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body">
+                                <p>Lorsque l’on saisit directement l’adresse web dans la barre d’adresse, on divise par quatre les émissions de gaz à effet de serre générées.</p>
+                                <p>opter pour le téléchargement plutôt que le visionnage en ligne d’une vidéo; ainsi, éviter de solliciter à outrance les data center qui stockent ces données.</p>
+                                <div>
+                                    <p>Privilégier le matériel reconditionné ou d’occasion, ou en en faisant le choix d’appareils économes, pouvant être réparés.</p>
+                                </div>
+
+
+                                <p>Eviter de multiplier les appareils</p>
+                                <p>Privilégier les imprimantes qui permettent de remplacer chaque couleur indépendamment.</p>
+
+                                <p>Bien entretenir son matériel avec des protections anti-virus pour éviter les pannes.</p>
+
+                                <p>Recycler son matériel informatique </p>
+                                <p>brancher ses équipements sur une multiprise à interrupteur et de l’éteindre lorsque qu’ils ne sont pas utilisés</p>
+                                <p>« mode économie d’énergie » sur son ordinateur, ou le « mode avion » pour son smartphone, cela augmentera leur autonomie.</p>
+                                <p>Bien penser à fermer ou supprimer les applications inutilisées sur son smartphone</p>
+                                <p>Désactiver le wifi de la box internet lorsque celui-ci n’est pas utilisé.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="blogText text3 article">
+                    <div>
+                        <p>La location de matériel informatique : une solution intéressante pour le télétravail</p>
+                    </div>
+                    <p>
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                            Lire plus
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapse3">
+                        <div class="card card-body">
+
+                            <p> L’usage d’équipements informatiques est indispensable et incontournable pour les professionnels de tous secteurs confondus. Toutefois, l’acquisition de matériel informatique peut représenter un budget assez conséquent.</p>
+
+                            <div>
+                                <p>
+                                    En plus de l’achat, il faut compter la maintenance, le remplacement et l’adaptation aux nouvelles avancées technologiques pour maintenir la productivité et l’efficacité des équipes dans la réalisation de leurs tâches quotidiennes. Pour limiter les coûts,
+                                    la location de pc portable est une solution avantageuse en particulier durant cette période de confinement. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- ancre flèche milieu de page -->
+                <div id="#middle"></div>
+
+
+                <div class="blogText text4 article">
+                    <div>
+                        <p> Par cette campagne de référencement payant, vous faites connaître votre site à la majorité des internautes.</p>
+                    </div>
+
+
+                    <p>
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                            Lire plus
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapse4">
+                        <div class="card card-body">
+                            <p> En tant qu’acheteur, il s’agit d’un service ciblé que vous obtenez.</p>
+                            <div>
+                                <p>
+                                    Fonctionne sur le modèle Coût Par Clic: c’est l’annonceur qui détermine la valeur d’un clic.le prix de l’enchère est fonction de la position que Google octroie à votre annonce.Votre hébergeur SEA pourrait vous proposer de commencer une campagne publicitaire.
+                                    Il ne vous suffit pas de verser une somme conséquente pour le mot-clé et être sûr d’un positionnement favorable. Pour surpasser vos concurrents, l’enchère doit être en synchronisation avec votre note de qualité.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogText text5 article">
+                    <div>
+                        <p>un message a jusqu’à 20 fois plus d’impact lorsque ce n’est pas la marque qui le promeut</p>
+                    </div>
+
+                    <p>
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+                            Lire plus
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapse5">
+                        <div class="card card-body">
+                            <p> transmis par l’un de vos collaborateurs, de vos clients ou l’un de vos ambassadeurs, il sera considéré comme étant beaucoup plus crédible.</p>
+                            <div>
+                                <p>
+                                    L’employee advocacy est le nouveau phénomène qui touche l’e-réputation des entreprises. En clair, non seulement dans leur vie professionnelle, mais aussi dans leur vie de tous les jours en partageant du contenu sur leurs réseaux sociaux. Il s’agit donc
+                                    d’inciter les employés à participer à la communication de leur entreprise. Quels sont les avantages de l’employee advocacy ?</p>
+
+
+                                <p>
+                                    Il y a plusieurs avantages à mettre en place cette stratégie dans votre entreprise, voyons ensemble lesquels : Augmenter votre audience Dans un premier temps, l’employee advocacy permet bien évidemment d’augmenter votre audience en ralliant l’audience
+                                    de vos ambassadeurs. L’audience touchée est mieux ciblée et plus réceptive.
+
+                                    <h5> Crédibiliser les messages que vous souhaitez faire passer</h5>
+
+                                    De plus, une stratégie d’employee advocacy efficace vous permettra de crédibiliser les messages que vous souhaitez faire passer. Et oui, gardez en tête que cela paraît toujours plus sincère lorsque c’est un collaborateur qui parle de votre marque, plutôt
+                                    que vous directement.
+
+                                    <h5>Valoriser le capital humain de votre entreprise</h5>
+
+                                    À n’en pas douter, cette stratégie valorise aussi votre capital humain. En effet, votre marque sera d’autant plus perçue comme une marque où il fait bon travailler si vos collaborateurs prennent d’eux-mêmes la parole sur leurs réseaux sociaux pour celle-ci.
+                                    Cela prouve d’une part leur engagement et d’autre part renforce votre image de marque.
+
+                                    <h5>Créer une culture digitale de l’engagement</h5>
+
+                                    L’employee advocacy est une démarche collective qui vous permet de créer une culture digitale de l’engagement sur les réseaux sociaux et d’amplifier de manière exponentielle la présence de votre entreprise sur le web. Ainsi, cela vous permettra de développer
+                                    la notoriété de votre marque employeur.
+
+                                    <h5> Réduire vos coûts de recrutement</h5>
+
+                                    Enfin, cette stratégie vous permet également de réduire vos coûts de recrutement. En effet, les coûts pour une campagne de recrutement par publication d’offres d’emploi sont tout de même assez élevés ! Ainsi, l’employee advocacy vous fera forcément faire
+                                    des économies à moyen et long terme sur ce point. Pour conclure, si l’on devait retenir une seule chose, c’est que promouvoir son entreprise, sur les réseaux, c’est bien. Mais la promouvoir avec l’aide de ses collaborateurs,
+                                    c’est encore mieux ! C’est l’employee advocacy. Désormais, vous en savez plus sur l’employee advocacy et vous avez toutes les cartes en main pour engager cette stratégie dans votre entreprise. Alors, n’hésitez plus
+                                    et lancez-vous !
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blogText text6 article">
+                    <div>
+                        <p>cet incendie a entraîné l’arrêt de nombreux sites et le dysfonctionnement de nombreux ERP/CRM, bien qu'il n’ait fait aucune victime</p>
+
+                        <div>
+
+                            <p>
+
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+                                    Lire plus
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapse6">
+                                <div class="card card-body">
+                                    <p> L’incendie d’OVH à Strasbourg a entraîné de nombreuses interruptions de service.</p>
+                                    <p>
+                                        Celles-ci ont touché des professionnels, des entreprises, des associations et des services publics. le départ de feu a eu lieu au niveau de deux onduleurs.</p>
+
+
+                                    <p>L’un d’eux avait fait l’objet d’opérations de maintenance quelques heures seulement avant l’incendie; les causes de l’incendie ne sont pas encore définies. <br><br> Selon Netcraft, 3,6 millions de serveurs HTTP représentant
+                                        464 000 noms de domaines ne répondaient plus à l’issue de l’incendie. <br> Parmi eux, il y avait entre autres : <br> data.gouv.fr <br> l’aéroport de Strasbourg-Entzheim <br> le centre Pompidou <br> le site Météociel
+                                        <br> l’université du Mans <br> la Fédération française de motocyclisme <br> plusieurs sites municipaux : Arras, Cherbourg, Colmar, Saverne ou encore Vichy <br> OVH a procédé à la remise en service des centres de
+                                        données la société a immédiatement stoppé la facturation de ses services auprès des professionnels impactés. Des solutions d’hébergement alternatif ont été proposées.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- flèche retour haut de page -->
+    <a href="#top-ancre" class="text-decoration-none d-flex justify-content-end mx-5"><i class="fas fa-arrow-circle-up text-dark fa-2x"></i></a>
+    <!-- ancre flèche vers bas de page -->
+    <div id="bottom-ancre"></div>
+
+
+
+    <footer class="align-items-end p-5 bg-light">
+        <div class="row row-cols-md-3 footer">
+            <div class="col col-lg-5 col-sm-12 adresse">
+                <h6><i class="fas fa-location-arrow mx-2"></i>Sedulo</h6>
+                <p><i class="far fa-user mx-2"></i>Agnès Cloud</p>
+                <p><i class="fas fa-phone-alt mx-2"></i> 06 20 43 25 80</p>
+                <p><i class="far fa-envelope mx-2"></i> agnes.cloud@gmail.com</p>
+            </div>
+            <div class="col col-lg-5 col-sm-12 align-self-end d-flex copyright">
+                <h6 class="mx-2">Copyright</h6>
+
+                <i class="far fa-copyright mx-2"></i>
+                <h6>2021</h6>&nbsp;&nbsp;
+
+
+
+
+                <a href="mentions.html" class="text-dark text-decoration-none">Mentions légales</a>&nbsp;
+                <a href="confidentialite.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
+
+            </div>
+            <div class="col col-lg-2 col-sm-12 align-self-end resLink">
+                <a href="#"><i class="fab fa-facebook-f fa-2x mx-2 text-dark"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-dark"></i></a>
+                <i class="text-primary fab fa-instagram fa-2x mx-2 text-dark"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+    </script>
+
+    <!-- le JS pour la lightbox -->
+    <script src="assets/lightbox/lightbox.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

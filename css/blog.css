@@ -1,0 +1,323 @@
+ /************* page blog ************/
+ 
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .blogText {
+     margin: 321px 0;
+     text-align: justify;
+     background-color: #f1f5fa;
+     width: 20 rem;
+     padding: 15px;
+ }
+ 
+ .text1 {
+     margin-top: 165px;
+ }
+ /*** blog ***zone de texte à droite */
+ 
+ .article p,
+ .article h3 {
+     max-width: 100%;
+ }
+ 
+ .card {
+     padding: 1.5%;
+     text-align: left;
+ }
+ 
+ hr {
+     height: 7px;
+     color: gray;
+     width: 100%;
+ }
+ 
+ .right {
+     margin: 20px 75px 20px 120px;
+     text-align: justify;
+ }
+ /* flèche de défilement */
+ 
+ .middle_arrow {
+     opacity: 0;
+     position: absolute;
+     top: 70%;
+     right: 2em;
+     z-index: -1;
+ }
+ 
+ .bottom_arrow {
+     position: absolute;
+     top: 80%;
+     right: 2em;
+     z-index: -1;
+ }
+ /***********************************************************media queries**************************************************/
+ /***********format mobile**/
+ 
+ @media(max-width:576px) {
+     /***page blog*** */
+     .article {
+         display: block;
+         margin: 50px 0;
+     }
+     .blogText {
+         /* margin: 321px 0; */
+         text-align: justify;
+         background-color: #f1f5fa;
+         width: 15 rem;
+         padding: 8px;
+     }
+     .mainBlog {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 250px;
+     }
+ }
+ 
+ @media(max-width:768px) {
+     .mainBlog {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         gap: 20px;
+         margin: 80px 50px 50px 50px;
+     }
+     .blogText {
+         margin: 321px 0;
+         text-align: justify;
+         background-color: #f1f5fa;
+         padding: 15px;
+         width: 16rem;
+     }
+     .text1 {
+         margin: 59px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text2 {
+         margin: 464px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+     .text3 {
+         margin: 873px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text4 {
+         margin: 1240px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+     .text5 {
+         margin: 1500px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text6 {
+         margin: 1833px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+ }
+ 
+ @media(max-width:992px) {
+     /***page blog*** */
+     .mainBlog {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         gap: 20px;
+     }
+     .blogText {
+         margin: 321px 0;
+         text-align: justify;
+         background-color: #f1f5fa;
+         padding: 15px;
+         width: 18rem;
+     }
+     .text1 {
+         margin: 100px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text2 {
+         margin: 556px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+     .text3 {
+         margin: 919px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text4 {
+         margin: 1240px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+     .text5 {
+         margin: 1599px 45px 0 0;
+         z-index: 1;
+         position: absolute;
+     }
+     .text6 {
+         margin: 1898px 45px 0 0;
+         position: absolute;
+         z-index: 1;
+     }
+ }
+ 
+ @media(max-width:1200px) {
+     /***page blog*** */
+     .mainBlog {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         gap: 30px;
+     }
+     .blogText {
+         margin: 321px 0;
+         text-align: justify;
+         background-color: #f1f5fa;
+         padding: 15px;
+         width: 20rem;
+     }
+     .text1 {
+         margin: 158px 78px 0 40px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text2 {
+         margin: 627px 78px 0 40px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text3 {
+         margin: 1053px 78px 0 40px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text4 {
+         margin: 1413px 78px 0 40px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text5 {
+         margin: 1795px 78px 0 40px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text6 {
+         margin: 2170px 78px 0 40px;
+         position: absolute;
+         z-index: 1;
+     }
+ }
+ 
+ @media(min-width:1201px) and (max-width:1400px) {
+     /***page blog*** */
+     .mainBlog {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         gap: 40px;
+     }
+     .blogText {
+         margin: 321px 0;
+         text-align: justify;
+         background-color: #f1f5fa;
+         padding: 15px;
+         width: 22rem;
+     }
+     .text1 {
+         margin: 165px 0px 0 50px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text2 {
+         margin: 650px 0px 0 50px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text3 {
+         margin: 1140px 0px 0 50px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text4 {
+         margin: 1516px 0px 0 50px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text5 {
+         margin: 1913px 0px 0 50px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text6 {
+         margin: 2324px 0px 0 50px;
+         position: absolute;
+         z-index: 1;
+     }
+ }
+ 
+ @media(min-width:1401px) {
+     /***page blog*** */
+     .mainBlog {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         gap: 50px;
+     }
+     .blogText {
+         margin: 321px 0;
+         text-align: justify;
+         background-color: #f1f5fa;
+         width: 20 rem;
+         padding: 15px;
+         width: 22rem;
+     }
+     .contenuContact {
+         background-color: #f1f5fa;
+         box-shadow: 1px 1px 10px 1px black;
+     }
+     .vertical {
+         height: 5px;
+         color: #d4d651;
+         position: absolute;
+         left: 51%;
+         top: 904px;
+         height: 2047px;
+         width: 10px;
+         transform: rotate(180deg);
+     }
+     .text1 {
+         margin: 197px 78px 0 60px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text2 {
+         margin: 768px 78px 0 60px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text3 {
+         margin: 1246px 78px 0 60px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text4 {
+         margin: 1695px 78px 0 60px;
+         position: absolute;
+         z-index: 1;
+     }
+     .text5 {
+         margin: 2045px 78px 0 60px;
+         z-index: 1;
+         position: absolute;
+     }
+     .text6 {
+         margin: 2643px 78px 0 60px;
+         position: absolute;
+         z-index: 1;
+     }
+ }

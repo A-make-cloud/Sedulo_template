@@ -1,0 +1,68 @@
+<header>
+    <nav id="navBg" class="navbar navbar-expand-lg navbar-light px-5 py-3">
+        <div class="container-fluid">
+
+
+            <!-- logo format desktop -->
+            <div>
+                <a href="index.php"><img src="./img/logo_sedulo.png" class="justify-content-start w-50 d-none d-sm-block" alt="logo"></a>
+            </div>
+
+            <a class="navbar-brand d-none" href="#">Navbar</a>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <!-- logo format mobil -->
+
+                    <a href="index.php" class="navbar-brand"><img src="./img/logo_sedulo.png" class="rounded mx-auto d-block w-25 d-block d-sm-none justify-content-center" alt="logo"></a>
+
+                </div>
+                <div class="justify-content-end d-block d-sm-none"> <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+
+                <ul class="liste navbar-nav fs-5 text">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="accueil" aria-current="page" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="realisations.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add_contact.php" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .middle_arrow {
+            position: absolute;
+            top: 70%;
+            right: 2em;
+        }
+        
+        .bottom_arrow {
+            position: absolute;
+            top: 160%;
+            right: 2em;
+            z-index: -1;
+        }
+    </style>
+
+
+    <!-- fleche qui descends en milieu de page -->
+    <a href="#middle_ancre" class="text-decoration-none middle_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+    <!-- fleche qui descends en bas de page -->
+    <a href="#bottom" class="text-decoration-none bottom_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>

@@ -1,0 +1,147 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .card {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    a {
+        font-family: 'Oswald', 600;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Oswald';
+    }
+    /**** partie header**** */
+    /* Animation JS navBar*/
+    
+    #navBg {
+        width: 100%;
+        padding: 1rem 1rem 0 0;
+        position: fixed;
+        transition: all 0.3s ease-out;
+    }
+    
+    .anim-navBg {
+        color: white;
+        background: #2b599a;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    /* Animation JS navBar*/
+    
+    .anim-navBgYellow {
+        color: gray;
+        background: #d4d651;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    
+    .anim-navBgPink {
+        color: gray;
+        background: #da3d88;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    /* fin d'animation */
+    
+    .header_bottom {
+        padding-top: 300px;
+    }
+    /* position ancre pour flèche de défilement page réalisation*/
+    
+    .middle_arrow_rea {
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        right: 2em;
+    }
+    
+    .bottom_arrow_rea {
+        position: absolute;
+        top: 85%;
+        right: 2em;
+    }
+    
+    .top_arrow_rea {
+        position: absolute;
+        top: 290%;
+        right: 2em;
+    }
+    
+    @media(max-width:576px) {
+        /* partie header */
+        h1 {
+            /* margin-top: 349px; */
+            font-size: 1.5em;
+        }
+        .contenuContact {
+            width: 95%;
+            text-align: left;
+            margin: 0 auto;
+            font-size: 95%;
+        }
+        .footer {
+            position: fixed;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .copyright {
+            margin: 50px 0 50px 85px;
+        }
+    }
+    
+    @media(max-width:768px) {}
+    
+    @media(max-width:992px) {
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .reslink {
+            white-space: nowrap;
+        }
+    }
+    
+    @media(min-width:1201px) and (max-width:1400px) {
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .reslink {
+            white-space: nowrap;
+        }
+    }
+    
+    @media(min-width:1401px) {
+        .footer {
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%;
+        }
+        .reslink {
+            white-space: nowrap;
+        }
+        .contenuContact {
+            background-color: #f1f5fa;
+            box-shadow: 1px 1px 10px 1px black;
+        }
+    }
+    /* #2b599a
+
+
+#da3d88
+
+#d4d651 */
+    /*

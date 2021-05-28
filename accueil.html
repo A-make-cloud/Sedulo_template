@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/logo_sedulo.png" />
+    <!-- feuilles de style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- feuilles de style font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+    <!-- feuilles de style dossier css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <!-- feuilles de style lightbox -->
+    <link href="assets/lightbox/lightbox.min.css" rel="stylesheet">
+    <!-- <script src="assets/lightbox/lightbox.js"></script> -->
+    <!-- police d'écriture -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,100&display=swap" rel="stylesheet">
+    <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
+    <title>Site Agence Web Sedulo</title>
+
+</head>
+<!-- ancre retour haut de page -->
+<div id="top-ancre" class="d-none d-sm-block"></div>
+
+<body>
+
+    <!-- ancre retour milieu de page -->
+    <div id="middle-ancre" class="d-none d-sm-block"></div>
+
+    <header>
+        <nav id="navBg" class="navbar navbar-expand-lg navbar-light px-5 py-3">
+            <div class="container-fluid">
+
+
+                <!-- logo format desktop -->
+                <div>
+                    <a href="index.php"><img src="./img/logo_sedulo.png" class="justify-content-start w-25 d-none d-sm-block" alt="logo"></a>
+                </div>
+
+                <a class="navbar-brand d-none" href="#">Navbar</a>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <!-- logo format mobil -->
+
+                        <a href="index.php" class="navbar-brand"><img src="./img/logo_sedulo.png" class="rounded mx-auto d-block w-25 d-block d-sm-none justify-content-center" alt="logo"></a>
+
+                    </div>
+                    <div class="justify-content-end d-block d-sm-none"> <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+
+                    <ul class="liste navbar-nav fs-5 text">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="accueil" aria-current="page" href="accueil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisations.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_contact.php" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <style>
+            #intro {
+                background-image: url(img/coule_1600.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 950px;
+            }
+            
+            @media (max-width:576px) {
+                /* ****accueil**********/
+                .all-content {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #presentation_576 {
+                    width: 50%;
+                    font-size: 0.5em;
+                    position: absolute;
+                    top: 615px;
+                }
+                #presentation a .presentation p {
+                    font-size: 250%;
+                    font-style: italic;
+                    font-weight: 400;
+                    /* text-align: center; */
+                }
+                #presentation {
+                    margin-top: 200px;
+                    margin-bottom: 432px;
+                }
+                #titre {
+                    position: absolute;
+                    top: 89px;
+                }
+                .proxi {
+                    position: absolute;
+                    top: 37px;
+                    animation: 2s 1 alternate proxiAnim;
+                }
+                .exi {
+                    position: absolute;
+                    top: -21px;
+                    animation: 3s 1 alternate exiAnim;
+                }
+                .crea {
+                    position: absolute;
+                    top: -73px;
+                    animation: 4s 1 alternate creaAnim;
+                }
+                .soupl {
+                    position: absolute;
+                    top: -120px;
+                    animation: 5s 1 alternate souplAnim;
+                }
+                .codons {
+                    /* opacity: 0; */
+                    text-shadow: 1px 1px 2px black;
+                    color: #d4d651;
+                    width: 10rem;
+                    font-size: 1.5em;
+                    font-weight: 300;
+                    position: absolute;
+                    top: 350px;
+                    padding: 1%;
+                    animation: 1s 2 ease-in alternate-reverse codeAnim;
+                    text-align: left;
+                    left: 50px;
+                }
+                .cont {
+                    position: relative;
+                    width: 400px;
+                    top: 331px;
+                    height: 350px;
+                    right: 100px;
+                    top: 880px;
+                    left: -4px;
+                }
+                .ca {
+                    bottom: 368px;
+                }
+            }
+        </style>
+
+        <!-- fleche qui descends en milieu de page -->
+        <a href="#middle-ancre" class="text-decoration-none middle_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+        <!-- fleche qui descends en bas de page -->
+        <a href="#bottom-ancre" class="text-decoration-none bottom_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+    </header>
+
+
+    <div id="intro">
+        <div class="all-content d-flex justify-content-around align-items-center w-100 m-auto">
+            <div class="col-1" id="content-1">
+
+                <p class="codons">Nous ne codons pas, nous décodons vos besoins</p>
+            </div>
+            <div class="header_bottom container intro">
+
+
+                <section id="presentation_576">
+                    <div class="container col-4" id="presentation">
+                        <a href="#">
+                            <div class="presentation" id="titre">
+                                <div>
+                                    <p class="text-center">Agence Web Sedulo</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="presentation">
+                                <div class="proxi">
+                                    <!-- valeurs de l'entreprise -->
+
+                                    <p>Proximité</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="presentation">
+                                <div class="exi">
+                                    <p>Exigence</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="presentation">
+
+                                <div class="slide crea">
+                                    <p>Créativité</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="presentation">
+                                <div class="slide soupl">
+                                    <p> Souplesse et réactivité</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="cont col-6">
+                <div class="ca">
+
+                    <h2>Proximite</h2>
+                    <p>
+                        Notre culture fait notre richesse et notre spécificité : prendre le temps d'écouter pour vous proposer des solutions concrètes et adaptées. Notre objectif est de construire des relations solides et durables avec nos clients, basées sur la confiance mutuelle,
+                        le partenariat et l'échange. Nous mettons l'accent sur la compréhension de vos attentes et vos besoins à chaque demande de votre part afin d'y répondre au mieux.Nous visons constamment à vous apporter un service personnalisé accompagné
+                        de la réponse optimum par rapport à vos besoins.</p>
+                </div>
+
+                <div class="ca">
+                    <h2>Exigence</h2>
+                    <p>
+                        Nous avons en permanence le souci de l'exigence. Exigence de qualité, exigence de résultat ou exigence de performance... Tous nos collaborateurs visent à être exigeant à chaque instant. Qu'ils travaillent "au pixel près", qu'ils optimisent les développements,
+                        ou qu'ils respectent vos objectifs et votre environnement, nos experts ont en permanence conscience qu'ils doivent inventer, apprendre et optimiser pour continuer à vous satisfaire.</p>
+                </div>
+                <div class="ca">
+                    <h2>Créativité</h2>
+                    <p>
+                        Nous privilégions une créativité au service de l'ergonomie et de la mise en valeur des contenus. Véritable pilier de notre essor, Sedulo encourage et valorise constamment la créativité, le sens de l'initiative et l'imagination afin de créer des projets
+                        non seulement séduisants, mais aussi efficaces. Nous accompagnons nos collaborateurs dans l'expression de leurs talents et de leurs capacités individuelles.</p>
+                </div>
+                <div class="ca">
+                    <h2>Souplesse et réactivité</h2>
+                    <p>
+                        Nous nous adaptons à vos demandes rapidement. La réactivité c'est avant tout répondre à votre première demande de devis en moins de 24 heures. C'est aussi respecter les délais de réalisation de la conception à la réalisation ainsi que le suivi et les
+                        évolutions des projets que vous nous confiez. Nos équipes techniques font également preuve de réactivité, notamment nos administrateurs réseaux, disponibles 24h/24 et 7j/7 pour délivrer un service d'infogérance performant.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ancre flèche vers bas de page -->
+    <div id="bottom-ancre" class="d-none d-sm-block"></div>
+    <!-- flèche retour haut de page -->
+    <a href="#top-ancre" class="text-decoration-none top_arrow d-flex justify-content-end mx-5 d-none d-sm-block"><i class="fas fa-arrow-circle-up text-dark fa-2x justify-content-end d-flex "></i></a>
+
+
+
+    <footer class="align-items-end p-2 bg-light footer">
+
+        <div class="row row-cols-md-3">
+            <div class="col col-lg-5 col-sm-12 adresse">
+                <h6><i class="fas fa-location-arrow mx-2"></i>Sedulo</h6>
+                <p><i class="far fa-user mx-2"></i>Agnès Cloud</p>
+                <p><i class="fas fa-phone-alt mx-2"></i> 06 20 43 25 80</p>
+                <p><i class="far fa-envelope mx-2"></i> agnes.cloud@gmail.com</p>
+            </div>
+            <div class="col col-lg-5 col-sm-12 align-self-end d-flex copyright">
+                <h6 class="mx-2">Copyright</h6>
+
+                <i class="far fa-copyright mx-2"></i>
+                <h6>2021</h6>&nbsp;&nbsp;
+
+
+
+
+                <a href="mentions.html" class="text-dark text-decoration-none">Mentions légales</a>&nbsp;
+                <a href="confidentialite.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
+
+            </div>
+            <div class="col col-lg-2 col-sm-12 align-self-end resLink">
+                <a href="#"><i class="fab fa-facebook-f fa-2x mx-2 text-dark"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-dark"></i></a>
+                <i class="text-primary fab fa-instagram fa-2x mx-2 text-dark"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+    </script>
+
+    <!-- le JS pour la lightbox -->
+    <script src="assets/lightbox/lightbox.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

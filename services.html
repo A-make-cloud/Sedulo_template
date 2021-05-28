@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/logo_sedulo.png" />
+    <!-- feuilles de style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- feuilles de style font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+    <!-- feuilles de style dossier css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- feuilles de style lightbox -->
+    <link href="assets/lightbox/lightbox.min.css" rel="stylesheet">
+    <!-- <script src="assets/lightbox/lightbox.js"></script> -->
+    <!-- police d'écriture -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,100&display=swap" rel="stylesheet">
+    <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
+    <title>Site Agence Web Sedulo</title>
+    <style>
+        @media(max-width:576px) {
+            /**** page service*** */
+            .services {
+                display: block;
+                margin-top: 125px;
+                background-color: white;
+            }
+            .mainServices {
+                display: flex;
+                flex-direction: column;
+                font-size: 90%;
+                margin: 0%;
+                padding: 0;
+                margin-bottom: 350px;
+            }
+            .servicesLeft {
+                margin-left: 33px;
+            }
+            .servicesLeft img {
+                margin-left: 95px;
+            }
+            .servicesRight {
+                margin-right: 29px;
+            }
+            .servicesRight img {
+                margin-left: 95px;
+            }
+            #img5 {
+                display: block;
+                margin-top: -60px;
+                background-color: white;
+            }
+            #img6 {
+                display: block;
+                margin-top: -130px;
+                background-color: white;
+            }
+            .servText6 {
+                margin-bottom: 350px;
+            }
+        }
+    </style>
+</head>
+<!-- ancre retour haut de page -->
+<div id="top-ancre" class="d-none d-sm-block"></div>
+
+<body>
+
+    <!-- ancre retour milieu de page -->
+    <div id="middle-ancre" class="d-none d-sm-block"></div>
+
+
+
+    <header>
+        <nav id="navBg" class="navbar navbar-expand-lg navbar-light px-5 py-3">
+            <div class="container-fluid">
+
+
+                <!-- logo format desktop -->
+                <div>
+                    <a href="index.php"><img src="./img/logo_sedulo.png" class="justify-content-start w-25 d-none d-sm-block" alt="logo"></a>
+                </div>
+
+                <a class="navbar-brand d-none" href="#">Navbar</a>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <!-- logo format mobil -->
+
+                        <a href="index.php" class="navbar-brand"><img src="./img/logo_sedulo.png" class="rounded mx-auto d-block w-25 d-block d-sm-none justify-content-center" alt="logo"></a>
+
+                    </div>
+                    <div class="justify-content-end d-block d-sm-none"> <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+
+                    <ul class="liste navbar-nav fs-5 text">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="accueil" aria-current="page" href="accueil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisations.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_contact.php" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- fleche qui descends en milieu de page -->
+        <a href="#middle-ancre" class="text-decoration-none middle_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+        <!-- fleche qui descends en bas de page -->
+        <a href="#bottom-ancre" class="text-decoration-none bottom_arrow d-none d-sm-block"><i class="fas fa-arrow-circle-down justify-content-end d-flex fa-2x text-dark"></i></a>
+
+
+        <!-- ========================================= -->
+        <!-- Services de l'agence -->
+        <!-- ========================================= -->
+        <div class="header_bottom container">
+            <div class="pt-5">
+                <h1 class="text-center">Expértises de Sedulo</h1>
+            </div>
+
+
+
+            <div class="contenuContact mt-5 mx-5 p-5">
+
+                <h2>Examen personnalisée</h2>
+                <h4>Votre identité visuelle étudiée et remise à jour et au goût du jour</h4>
+
+                <h4>Chaque étape est importante:</h4>
+                <p>Consulting, analyse, plan projet, refonte du site et création d'un chartre graphique et d'un logo</p>
+
+                <p>Votre site est la vitrine de votre entreprise, un conseillé saura vous guider dans la création de votre page web</p>
+
+            </div>
+        </div>
+    </header>
+    <section class="main container w-75">
+        <div>
+            <h2 class="text-center mt-5 text-uppercase">Services</h2>
+
+            <div class="container">
+                <section class="mainServices container">
+
+
+
+                    <section class="servicesLeft">
+                        <div class="services">
+                            <div class="servText">
+                                <h3>Audit et conseil</h3>
+                                <p>Un projet web englobe de nombreuses compétences : graphisme et webdesign, ergonomie, rédaction, référencement, marketing... et des étapes à respecter.Améliorez les performances de votre site web grâce à un diagnostic et
+                                    une analyse détaillée. Un audit de site web est un rapport détaillé sur l’état de santé de votre site web à un instant T. Il permet de mettre en évidence et de détailler les points forts et surtout les points faibles
+                                    de votre site web. </p>
+                            </div>
+                            <div id="img1">
+                                <img src="img/audit.png" alt="icone audit">
+                            </div>
+                        </div>
+                        <div class="services">
+                            <div class="servText">
+                                <h3>Référencement SEO</h3>
+                                <p>Il est essentiel de réaliser un Audit de référencement pour garantir un référencement naturel durable et vous permettre d’atteindre les premières places des moteurs de recherche dès sa mise en ligne.Vous souhaitez améliorer
+                                    les positions de votre site web sur Google ? Améliorer votre taux de conversion et augmenter votre chiffre d’affaire ?. Notre équipe de référenceurs experts est spécialisée dans le référencement naturel, référencement
+                                    Google Ads, le suivi des contacts et l’optimisation des conversions.</p>
+                            </div>
+                            <div id="img2">
+                                <img src="img/referencement.png" alt="icone referencement">
+                            </div>
+                        </div>
+                        <div class="services">
+                            <div class="servText">
+                                <h3>Contenu</h3>
+                                <p>Le but d’une stratégie de contenu est d’attirer, d’engager et de fidéliser une audience spécifique et ultimement de générer des conversions. Le contenu de votre site Internet va avoir plusieurs utilités. Il va permettre
+                                    dans un premier temps de vendre votre savoir-faire et vos produits aux visiteurs de votre site. Il va également permettre de gagner en visibilité sur les moteurs de recherche. Vous serez présent là où des prospects
+                                    recherchent l'information.</p>
+                            </div>
+                            <div id="img3">
+                                <img src="img/contenu.png" alt="icone contenu">
+                            </div>
+                        </div>
+
+
+
+                    </section>
+                    <section class="servicesRight">
+                        <div class="services">
+                            <div id="img4">
+                                <img src="img/uxDesign.png" alt="icone ux design">
+                            </div>
+                            <div class="servText">
+                                <h3>Ux Design</h3>
+                                <p>L'Ux Design ou expérience utilisateur est la qualité du vécu de l'utilisateur dans des environnements numériques ou physiques.Nous réalisons un Webdesign respectant les standards du web, tout en privilégiant une expérience
+                                    utilisateur agréable. Le Webdesign contribue à la réussite de votre projet digital.</p>
+                            </div>
+
+                        </div>
+                        <div class="services">
+                            <div id="img5">
+                                <img src="img/creationGraphique.png" alt="icone creation graphique">
+                            </div>
+                            <div class="servText">
+                                <h3>Création graphique</h3>
+                                <p>De la création ou la refonte de votre logo et création de votre chartre graphique.Le logo est la pierre angulaire de toute identité visuelle et la définition de votre charte en fonction de vos personas doit refléter l’activité
+                                    et les objectifs de votre entreprise</p>
+                            </div>
+                        </div>
+
+                        <div class="services">
+                            <div id="img6">
+                                <img src="img/dev.png" alt="icone developpement web">
+                            </div>
+                            <div class="servText servText6">
+                                <h3>Développement</h3>
+                                <p>Conception du site. Les principaux langages utilisés pour créer des sites ou applications web sont le HTML, le CSS, le JavaScript, MySQL et le PHP.L'utilisation des CMS, des logiciels visant à structurer plus facilement
+                                    (et de façon plus automatisée) le contenu d'un site web.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- flèche retour haut de page -->
+    <a href="#top-ancre" class="text-decoration-none top_arrow d-flex justify-content-end mx-5 d-none d-sm-block"><i class="fas fa-arrow-circle-up text-dark fa-2x justify-content-end d-flex "></i></a>
+    <!-- ancre flèche vers bas de page -->
+    <div id="bottom-ancre" class="d-none d-sm-block"></div>
+
+
+
+    <footer class="align-items-end p-2 bg-light footer">
+        <div class="row row-cols-md-3">
+            <div class="col col-lg-5 col-sm-12 adresse">
+                <h6><i class="fas fa-location-arrow mx-2"></i>Sedulo</h6>
+                <p><i class="far fa-user mx-2"></i>Agnès Cloud</p>
+                <p><i class="fas fa-phone-alt mx-2"></i> 06 20 43 25 80</p>
+                <p><i class="far fa-envelope mx-2"></i> agnes.cloud@gmail.com</p>
+            </div>
+            <div class="col col-lg-5 col-sm-12 align-self-end d-flex copyright">
+                <h6 class="mx-2">Copyright</h6>
+
+                <i class="far fa-copyright mx-2"></i>
+                <h6>2021</h6>&nbsp;&nbsp;
+
+
+
+
+                <a href="mentions.html" class="text-dark text-decoration-none">Mentions légales</a>&nbsp;
+                <a href="confidentialite.html" class="text-dark text-decoration-none">Politique de confidentialité</a>
+
+            </div>
+            <div class="col col-lg-2 col-sm-12 align-self-end resLink">
+                <a href="#"><i class="fab fa-facebook-f fa-2x mx-2 text-dark"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-dark"></i></a>
+                <i class="text-primary fab fa-instagram fa-2x mx-2 text-dark"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+    </script>
+
+    <!-- le JS pour la lightbox -->
+    <script src="assets/lightbox/lightbox.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
